@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import "./App.css";
+import AddFood from "./component/AddFood/AddFood";
+import CreateMaterial from "./component/AddMaterial/CreateMaterial";
+import MainHeader from "./component/MainHeader/MainHeader";
+import CreateFood from "./component/SearchForm/CreateFood";
 
 function App() {
+  const [isAdd, setIsAdd] = useState("Add");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <MainHeader setAdd={setIsAdd} />
+      <main>
+        {isAdd === "Add" && <AddFood />}
+        {isAdd === "Create" && <CreateFood />}
+        {isAdd === "Material" && <CreateMaterial />}
+      </main>
+    </React.Fragment>
   );
 }
 

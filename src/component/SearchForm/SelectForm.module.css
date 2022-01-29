@@ -1,0 +1,37 @@
+.form {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.form label,
+.form select {
+  display: block;
+}
+
+.form label {
+  font-weight: bold;
+  flex: 1;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.form select {
+  flex: 3;
+  font: inherit;
+  padding: 0.35rem 0.35rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+.form Button {
+  margin-top: 30px;
+  font: inherit;
+  border: 1px solid #4b81a5;
+  background: #4b81a5;
+  color: white;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  border-radius: 30px;
+}

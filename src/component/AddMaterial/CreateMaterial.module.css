@@ -1,0 +1,60 @@
+.card {
+  width: 90%;
+  max-width: 40rem;
+  padding: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  align-items: stretch;
+  flex-direction: column;
+  display: flex;
+}
+
+.form {
+  margin: 1rem 0;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.form label {
+  display: block;
+}
+
+.form label {
+  font-weight: bold;
+  flex: 1;
+  color: #464646;
+  margin-bottom: 0.5rem;
+}
+
+.button {
+  margin-top: 30px;
+  font: inherit;
+  border: 1px solid #4b81a5;
+  background: #4b81a5;
+  color: white;
+  padding: 0.75rem 3.5rem;
+  cursor: pointer;
+  font-size: 1.15rem;
+  border-radius: 30px;
+}
+
+.form-control input:focus {
+  outline: none;
+  background: #fad0ec;
+  border-color: #8b005d;
+}
+
+.form.invalid input {
+  border-color: red;
+  background: #ffd7d7;
+}
+
+.input.invalid label {
+  border-color: red;
+  background: #ffd7d7;
+}
+
+.form.invalid label {
+  color: red;
+}

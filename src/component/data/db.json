@@ -1,0 +1,21 @@
+{
+  "foods": [
+    {
+      "id": 0.24871940462546416,
+      "name": "Gulyás leves",
+      "materials": [
+        "margarin",
+        "tej",
+        "sajt",
+        "paradicsom"
+      ]
+    },
+    {
+      "id": 0.23279842893586145,
+      "name": "",
+      "materials": [
+        "Kukorica"
+      ]
+    }
+  ]
+}
